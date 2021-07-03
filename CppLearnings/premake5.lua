@@ -14,8 +14,8 @@ project "CppLearnings"
     kind "ConsoleApp"
     language "C++"
 
-    targetdir ("bin/" ..outputdir.. "/%{prj.name}")
-    objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
+    targetdir ("bin/" ..outputdir..  "")
+    objdir ("bin-int/" ..outputdir..  "")
 
     files
     {
