@@ -1,5 +1,5 @@
 //
-//#include <iostream>
+#include <iostream>
 //
 //struct Entity
 //{
@@ -25,6 +25,8 @@
 //
 //	int* GetPositions() { return &x; }
 //};
+// 
+   
 //int main()
 //{
 //	Entity e = { 3, 5 };
@@ -47,7 +49,32 @@
 //	Try2 t2 = { 3,5,7,9 };
 //	int* p_arr = t2.GetPositions();
 //	std::cout << p_arr[0] << "," << p_arr[1] << "," << p_arr[2] << "," << p_arr[3] << std::endl;
+
+
+//using of union makes that you can use both of these for same memory adress. every variable a ,b ,c, d is also
+//  points to the adress of arr[0], arr[1] , arr[2] , arr[3] in order. So you can both say from a created something struct
+//  something sh = new something() --> sh->a or sh->arr[0] // . It is exactly the same.
+//struct something
+//{
+//	union {
+//		struct
+//		{
+//			int a, b, c, d;
+//		};
 //
+//		int arr[4];
+//
+//	};
+//};
+//
+//int main()
+//{
+//	something* bc = new something();
+//	bc->arr[0] = 5;
+//	std::cout << bc->a << std::endl;
+//	bc->arr[2] = 1241;
+//	std::cout << bc->c << std::endl;
+//}
 //	
 //	return 0;
 //}

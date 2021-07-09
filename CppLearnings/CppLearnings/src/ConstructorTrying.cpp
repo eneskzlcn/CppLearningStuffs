@@ -4,8 +4,8 @@
 //class Car
 //{
 //public:
-//	Car(int x, int y) //this kind of constructor works fine....
-//		:pos_x(x), pos_y(y) {}
+	//Car(int x, int y) //this kind of constructor works fine.... member initializor class
+	//	:pos_x(x), pos_y(y) {}
 //
 //	int GetPosX() { return pos_x; }
 //	int GetPosY() { return pos_y; }
